@@ -24,11 +24,16 @@
 </head>
 
 	<body>
-		
-		<form action="login.action" method="post">
+		<!-- <script type="text/javascript">
+		function sub(){
+		}
+		</script> -->
+		<form action="mylogin.action" method="post">
+		<input type="hidden" name="action"/>
 		姓名：<input type="text" name="user.username"/><br>
 		密码：<input type="password" name="user.password"/><br>
 		<input type="submit" value="登录"/>
+		<input type="button" value="注册" onclick="javascript:document.location.href='register.jsp';"/>
 		</form>
 		
 	</body>

@@ -8,6 +8,7 @@ import com.bright.ssh.SSH;
 import com.opensymphony.xwork2.ActionSupport;
 
 
+@SuppressWarnings("serial")
 public class LoginAction  extends ActionSupport{
 	private User user;
 	

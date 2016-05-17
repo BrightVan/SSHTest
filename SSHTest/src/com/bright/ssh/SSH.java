@@ -3,10 +3,10 @@ package com.bright.ssh;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SSH {
-	public static ClassPathXmlApplicationContext beans = new ClassPathXmlApplicationContext(
+	public static ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext(
 			"../applicationContext.xml");
 
 	public static Object getDAO(String daoName) {
-		return beans.getBean(daoName);
+		return ctx.getBean(daoName);
 	}
 }
